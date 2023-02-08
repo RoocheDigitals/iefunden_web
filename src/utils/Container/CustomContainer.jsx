@@ -2,7 +2,6 @@ import onefourthCircle from "../../assets/onefourth-circle.png";
 import circle from "../../assets/circle1.png";
 import { Flex, Image } from "@chakra-ui/react";
 
-// please put some background_color props
 const CustomContainer = ({ children, background_Color }) => {
   return (
     <Flex

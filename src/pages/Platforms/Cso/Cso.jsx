@@ -1,7 +1,7 @@
-import React from "react";
+import SimpleGridContainer from "../../../utils/Container/SimpleGridContainer";
 
 const Cso = () => {
-  return <div>Cso</div>;
+  return <SimpleGridContainer></SimpleGridContainer>;
 };
 
 export default Cso;

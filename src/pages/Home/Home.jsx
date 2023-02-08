@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import CustomContainer from "../Container/CustomContainer";
+import CustomContainer from "../../utils/Container/CustomContainer";
 
 import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
 
