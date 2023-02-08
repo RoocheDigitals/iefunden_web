@@ -18,7 +18,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const SignUpCso = () => {
+const SignUpLib = () => {
   return (
     <Box>
       <Stack spacing={1} marginBottom="1rem">
@@ -46,4 +46,4 @@ const SignUpCso = () => {
   );
 };
 
-export default SignUpCso;
+export default SignUpLib;

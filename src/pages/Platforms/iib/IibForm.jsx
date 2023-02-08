@@ -1,16 +1,16 @@
 import FormContainer from "../../../utils/Container/FormContainer";
 import FormHeader from "../FormHeader";
-import SignInCso from "./SignInCso";
-import SignUpCso from "./SignUpCso";
+import SignInIib from "./SignInIib";
+import SignUpIib from "./SignUpIib";
 
-const CsoForm = () => {
+const IibForm = () => {
   return (
     <FormContainer>
       <FormHeader />
-      {/* <SignUpCso /> */}
-      <SignInCso />
+      {/* <SignUpIib /> */}
+      <SignInIib />
     </FormContainer>
   );
 };
 
-export default CsoForm;
+export default IibForm;

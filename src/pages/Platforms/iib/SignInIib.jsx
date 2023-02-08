@@ -18,27 +18,26 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const SignUpCso = () => {
+const SignInIib = () => {
   return (
     <Box>
       <Stack spacing={1} marginBottom="1rem">
-        <InputBar input_Label="Full Name" input_Type="text" />
-        <InputBar input_Label="Email" input_Type="email" />
+        <InputBar input_Label="Email/Username" input_Type="text" />
         <InputBar input_Label="Password" input_Type="password" />
-        <InputBar input_Label="Mobile No." input_Type="number" />
-        <InputBar input_Label="Type of Service" input_Type="text" />
-        <InputBar input_Label="Upload Logo" input_Type="text" />
       </Stack>
       <FormButton
-        button_Name="Sign Up"
+        button_Name="Sign In"
         button_Color="#132885"
         button_Width="100%"
       />
       <Box textAlign="center" my="1rem">
+        <Link as={ReachLink} fontWeight="600" color="hsla(229, 88%, 44%, 1)">
+          Forgot Password
+        </Link>
         <Text color="hsla(0, 0%, 0%, 1)" fontWeight="600">
-          I already have an Account{" "}
+          I don't have account{" "}
           <Link as={ReachLink} color="hsla(229, 88%, 44%, 1)">
-            Sign In
+            Sign Up
           </Link>
         </Text>
       </Box>
@@ -46,4 +45,4 @@ const SignUpCso = () => {
   );
 };
 
-export default SignUpCso;
+export default SignInIib;

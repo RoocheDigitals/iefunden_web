@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import CustomContainer from "../../utils/Container/CustomContainer";
-
+import HomeButton from "../../utils/Button/HomeButton";
 import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
 
 const Home = () => {
@@ -21,31 +21,18 @@ const Home = () => {
             </Stack>
           </Stack>
           <Stack spacing="2.5">
-            <Button
-              borderRadius="none"
-              bgColor="hsla(255, 80%, 98%, 1)"
-              color="hsla(229, 75%, 30%, 1)"
-              fontWeight="700"
+            <HomeButton
+              button_Name="C/PPA Platform"
               onClick={() => navigate("cppa")}
-            >
-              C/PPA Platform
-            </Button>
-            <Button
-              borderRadius="none"
-              bgColor="hsla(255, 80%, 98%, 1)"
-              color="hsla(229, 75%, 30%, 1)"
-              fontWeight="700"
-            >
-              CSO Wallet
-            </Button>
-            <Button
-              borderRadius="none"
-              bgColor="hsla(255, 80%, 98%, 1)"
-              color="hsla(229, 75%, 30%, 1)"
-              fontWeight="700"
-            >
-              IIB Portfolio
-            </Button>
+            />
+            <HomeButton
+              button_Name="CSO Wallet"
+              onClick={() => navigate("cso")}
+            />
+            <HomeButton
+              button_Name="IIB Portfolio"
+              onClick={() => navigate("iib")}
+            />
           </Stack>
         </Box>
       </Box>
