@@ -1,24 +1,20 @@
 import { Link as ReachLink } from "react-router-dom";
-import {
-  Box,
-  Divider,
-  Flex,
-  Heading,
-  Link,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Divider, Flex, Heading, Link, Stack } from "@chakra-ui/react";
 
-const FormHeader = () => {
+const FormHeader = ({ formType, setFormType }) => {
   return (
     <Stack spacing="4vh" marginBottom="2rem">
       <Heading color="hsla(229, 75%, 30%, 1)">ieFundEn</Heading>
       <Flex>
         <Link
           as={ReachLink}
-          fontWeight="400"
           fontSize="1.25rem"
-          color="hsla(0, 0%, 0%, 1)"
+          style={
+            formType === "signin"
+              ? { fontWeight: "600", color: "hsla(229, 75%, 30%, 1)" }
+              : { fontWeight: "400", color: "hsla(0, 0%, 0%, 1)" }
+          }
+          onClick={() => setFormType("signin")}
         >
           Sign In
         </Link>
@@ -30,9 +26,13 @@ const FormHeader = () => {
         />
         <Link
           as={ReachLink}
-          fontWeight="400"
           fontSize="1.25rem"
-          color="hsla(0, 0%, 0%, 1)"
+          style={
+            formType === "signup"
+              ? { fontWeight: "600", color: "hsla(229, 75%, 30%, 1)" }
+              : { fontWeight: "400", color: "hsla(0, 0%, 0%, 1)" }
+          }
+          onClick={() => setFormType("signup")}
         >
           Sign Up
         </Link>
