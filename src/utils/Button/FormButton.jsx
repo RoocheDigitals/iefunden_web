@@ -7,6 +7,7 @@ const FormButton = ({ button_Name, button_Color, button_Width }) => {
       borderRadius="0"
       bgColor={button_Color}
       width={button_Width}
+      _hover={{ bgColor: "gray.500" }}
     >
       {button_Name}
     </Button>

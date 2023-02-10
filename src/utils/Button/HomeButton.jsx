@@ -1,6 +1,6 @@
 import { Button } from "@chakra-ui/button";
 
-const HomeButton = ({ button_Name, button_Color, button_Width, onClick }) => {
+const HomeButton = ({ button_Name, button_Width, onClick }) => {
   return (
     <Button
       bgColor="hsla(255, 80%, 98%, 1)"
@@ -9,6 +9,7 @@ const HomeButton = ({ button_Name, button_Color, button_Width, onClick }) => {
       fontWeight="700"
       width={button_Width}
       onClick={onClick}
+      _hover={{ bgColor: "gray.400" }}
     >
       {button_Name}
     </Button>

@@ -12,7 +12,7 @@ import {
 const FormHeader = () => {
   return (
     <Stack spacing="4vh" marginBottom="2rem">
-      <Heading color="hsla(229, 75%, 30%, 1)">Iefunden</Heading>
+      <Heading color="hsla(229, 75%, 30%, 1)">ieFundEn</Heading>
       <Flex>
         <Link
           as={ReachLink}

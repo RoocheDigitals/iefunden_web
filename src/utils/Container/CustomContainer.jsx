@@ -1,6 +1,6 @@
 import onefourthCircle from "../../assets/onefourth-circle.png";
 import circle from "../../assets/circle1.png";
-import { Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
 
 const CustomContainer = ({ children, background_Color }) => {
   return (
@@ -10,20 +10,24 @@ const CustomContainer = ({ children, background_Color }) => {
       flexDirection="column"
       height="100vh"
       bgGradient={background_Color}
+      position="relative"
+      overflow="hidden"
     >
       <Image
         position="absolute"
-        top="0%"
-        right="0%"
+        top="0"
+        right="0"
         transform="rotate(180deg)"
-        src={onefourthCircle}
         opacity="50%"
+        src={onefourthCircle}
       />
+
       {children}
+
       <Image
         position="absolute"
-        bottom="-0.5rem"
-        left="-14rem"
+        bottom="-10px"
+        left="-220px"
         src={circle}
         opacity="50%"
       />

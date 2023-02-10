@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import CustomContainer from "../../utils/Container/CustomContainer";
 import HomeButton from "../../utils/Button/HomeButton";
-import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Home = () => {
       <Box color="#fff">
         <Box textAlign="center" maxWidth="18.688rem">
           <Stack spacing="10" mb="12vh">
-            <Heading fontSize="3rem">Iefunden</Heading>
+            <Heading fontSize="3rem">ieFundEn</Heading>
             <Stack spacing="1rem">
               <Text fontWeight="700">Welcome</Text>
               <Text lineHeight="1.3">
