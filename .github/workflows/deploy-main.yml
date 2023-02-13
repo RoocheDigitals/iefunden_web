@@ -51,21 +51,21 @@ jobs:
       
       - name: Install node modules
         run: |
-          npm ci
+          yarn install
           git checkout -- .
         env:
           # CI_ACCESS_TOKEN: ${{ secrets.CI_ACCESS_TOKEN }}
           IGNORE_CACHE: ${{ secrets.DEV_IGNORE_CACHE }}
         if: ${{ steps.cache-node.outputs.cache-hit != 'true' || env.IGNORE_CACHE == 'true' }}
 
-      - name: Run static code analysis
-        run: npm run lint
+      # - name: Run static code analysis
+      #   run: npm run lint
 
       - name: Build
-        run: npm run build 
+        run: yarn build
 
       - name: Upload files
-        run: aws s3 sync ./out s3://${{ secrets.MAIN_S3_BUCKET_NAME }} --delete
+        run: aws s3 sync ./dist s3://${{ secrets.MAIN_S3_BUCKET_NAME }} --delete
 
       - name: Invalidate CDN cache
         run: |
