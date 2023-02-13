@@ -55,7 +55,7 @@ jobs:
           git checkout -- .
         env:
           # CI_ACCESS_TOKEN: ${{ secrets.CI_ACCESS_TOKEN }}
-          # IGNORE_CACHE: ${{ secrets.DEV_IGNORE_CACHE }}
+          IGNORE_CACHE: ${{ secrets.DEV_IGNORE_CACHE }}
         if: ${{ steps.cache-node.outputs.cache-hit != 'true' || env.IGNORE_CACHE == 'true' }}
 
       - name: Run static code analysis
