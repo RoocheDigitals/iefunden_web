@@ -12,7 +12,12 @@ const MainHeader = ({ heading_Text }) => {
       padding="2rem 4rem"
     >
       <Flex>
-        <Image src={hamburgerMenu} width="1.5rem" height="1.5rem" />
+        <Image
+          cursor="pointer"
+          src={hamburgerMenu}
+          width="1.5rem"
+          height="1.5rem"
+        />
       </Flex>
 
       <Flex flexDirection="column" maxWidth="100%">

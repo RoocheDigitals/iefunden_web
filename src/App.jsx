@@ -2,9 +2,10 @@ import { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./components/Home/Home";
-// import Cppa from "./pages/Platforms/Cppa/Cppa";
-// import Cso from "./pages/Platforms/Cso/Cso";
-// import Iib from "./pages/Platforms/iib/Iib";
+import Cppa from "./components/Cppa/Cppa";
+import Cso from "./components/Cso/Cso";
+import Iib from "./components/Iib/Iib";
+
 import "./App.css";
 
 import { extendTheme } from "@chakra-ui/react";
@@ -56,9 +57,9 @@ function App() {
     <ChakraProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="cppa" element={<Cppa />} />
+        <Route path="cppa" element={<Cppa />} />
         <Route path="cso" element={<Cso />} />
-        <Route path="iib" element={<Iib />} /> */}
+        <Route path="iib" element={<Iib />} />
       </Routes>
     </ChakraProvider>
   );
