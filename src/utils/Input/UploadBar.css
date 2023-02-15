@@ -1,7 +1,0 @@
-#upload__bar input[type="file"] {
-  color: transparent;
-}
-
-#upload__bar input[type="file"]::-webkit-file-upload-button {
-  display: none;
-}
