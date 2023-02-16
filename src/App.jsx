@@ -61,7 +61,8 @@ function App() {
     <ChakraProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="cppa" element={<Cppa />}>
+        <Route path="cppa" element={<CppaLayout />}>
+          <Route index element={<Cppa />} />
           <Route path="login" element={<CppaLogin />} />
           <Route path="signup" element={<CppaSignup />} />
         </Route>

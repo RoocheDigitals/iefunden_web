@@ -7,6 +7,7 @@ export const Section = ({ children }) => {
       flex="1"
       flexDirection="column"
       alignItems="center"
+      marginTop="7vh"
       gap="3rem"
     >
       {children}

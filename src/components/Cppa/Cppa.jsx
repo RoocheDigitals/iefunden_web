@@ -11,24 +11,21 @@ const Cppa = () => {
   const navigate = useNavigate();
 
   return (
-    <MainContainer heading_Text="Welcome to C/PPA Platform">
-      <Section>
-        <MainLogo />
-        <Stack spacing={3}>
-          <PrimaryButton
-            button_Name="Sign Up"
-            button_Width="16rem"
-            onClick={() => navigate("signup")}
-          />
-          <PrimaryButton
-            button_Name="Log In"
-            button_Width="16rem"
-            onClick={() => navigate("login")}
-          />
-          <Outlet />
-        </Stack>
-      </Section>
-    </MainContainer>
+    <>
+      <MainLogo />
+      <Stack spacing={3}>
+        <PrimaryButton
+          button_Name="Sign Up"
+          button_Width="16rem"
+          onClick={() => navigate("signup")}
+        />
+        <PrimaryButton
+          button_Name="Log In"
+          button_Width="16rem"
+          onClick={() => navigate("login")}
+        />
+      </Stack>
+    </>
   );
 };
 

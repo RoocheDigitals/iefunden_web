@@ -7,24 +7,26 @@ import {
 } from "@chakra-ui/react";
 
 const InputBar = ({
-  form_Label,
+  input_Label,
   input_Type,
   input_Width,
-  input_Addon,
-  placeholder_Content,
+  input_Element,
+  input_Placeholder,
 }) => {
   return (
     <FormControl>
-      <FormLabel color="lightblue">{form_Label}</FormLabel>
+      <FormLabel fontSize="1.25rem" fontWeight="700" color="lightblue">
+        {input_Label}
+      </FormLabel>
       <InputGroup>
         <Input
           border="1px solid black"
           borderRadius="100px"
           type={input_Type}
-          placeholder={placeholder_Content}
+          placeholder={input_Placeholder}
           width={input_Width}
         />
-        <InputRightElement children={input_Addon} />
+        {input_Element}
       </InputGroup>
     </FormControl>
   );
