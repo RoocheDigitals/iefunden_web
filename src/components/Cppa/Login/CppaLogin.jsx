@@ -14,8 +14,13 @@ const CppaLogin = () => {
     <>
       <Flex width="100%" flexDirection="column" alignItems="center" gap="5vh">
         <Stack spacing={3} width="85%">
-          <InputBar input_Label="Company Name" input_Type="text" />
           <InputBar
+            input_Label="Company Name"
+            input_Type="text"
+            input_Placeholder="Company Name"
+          />
+          <InputBar
+            input_Placeholder="PIN"
             input_Label="PIN"
             input_Type={unhidePassword ? "text" : "password"}
             input_Element={
