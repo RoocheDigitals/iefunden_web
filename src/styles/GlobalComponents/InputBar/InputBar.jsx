@@ -22,6 +22,7 @@ const InputBar = ({
         <Input
           border="1px solid black"
           borderRadius="100px"
+          _hover={{ borderColor: "none" }}
           type={input_Type}
           placeholder={input_Placeholder}
           width={input_Width}

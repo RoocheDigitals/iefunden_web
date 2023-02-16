@@ -52,6 +52,11 @@ const theme = extendTheme({
       "html, body": {
         fontFamily: "Inter, sans-serif",
       },
+      _placeholder: {
+        fontSize: "0.9rem",
+        color: "subcolor",
+        fontWeight: "700",
+      },
     },
   },
 });
