@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import mainLogo from "../../assets/mainLogo.png";
-import { Section } from "./HomeStyles";
+import { Section } from "../../styles/GlobalComponents/Containers/Section";
 import PrimaryButton from "../../styles/GlobalComponents/Button/PrimaryButton";
 import MainContainer from "../../styles/GlobalComponents/Containers/MainContainer";
+import MainLogo from "../../styles/GlobalComponents/Logo/MainLogo";
 
 import { Box, Image, Link, Stack } from "@chakra-ui/react";
 
@@ -14,7 +15,7 @@ const Home = () => {
   return (
     <MainContainer heading_Text="Welcome to ieFundEn">
       <Section>
-        <Image src={mainLogo} boxSize="12rem" />
+        <MainLogo />
         <Stack spacing={3}>
           {state === "getStart" && (
             <PrimaryButton

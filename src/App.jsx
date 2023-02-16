@@ -5,6 +5,9 @@ import Home from "./components/Home/Home";
 import Cppa from "./components/Cppa/Cppa";
 import Cso from "./components/Cso/Cso";
 import Iib from "./components/Iib/Iib";
+import CppaLayout from "./Layout/CppaLayout";
+import CppaLogin from "./components/Cppa/Login/CppaLogin";
+import CppaSignup from "./components/Cppa/Signup/CppaSignup";
 
 import "./App.css";
 
@@ -16,6 +19,7 @@ const theme = extendTheme({
     subcolor: "#637C8D",
     white: "#FFFFFF",
     black: "#000000",
+    grayAccent: "#E3E3E3",
   },
   fontSizes: {
     xs: "0.75rem",
@@ -57,7 +61,10 @@ function App() {
     <ChakraProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="cppa" element={<Cppa />} />
+        <Route path="cppa" element={<Cppa />}>
+          <Route path="login" element={<CppaLogin />} />
+          <Route path="signup" element={<CppaSignup />} />
+        </Route>
         <Route path="cso" element={<Cso />} />
         <Route path="iib" element={<Iib />} />
       </Routes>
@@ -66,3 +73,13 @@ function App() {
 }
 
 export default App;
+
+{
+  /* ---------
+  <Route path="wallet" element={<WalletLayout />}>
+    <Route index element={<Wallet />} />
+    <Route path="addmoney" element={<AddMoney />} />
+    <Route path="withdraw" element={<Withdraw />} />
+</Route> 
+--------- */
+}
